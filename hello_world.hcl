@@ -2,11 +2,6 @@ job "hello-world" {
   datacenters = ["lan"]
   type = "service"
 
-  constraint {
-    attribute = "${node.unique.name}"
-    value     = "rp2"
-  }
-
   group "app" {
     count = 2
 
