@@ -58,9 +58,9 @@ job "hello-world" {
 
       env {
         MESSAGE = <<EOF
-        Hello from Nomad!
-        I'm gbt55
-        EOF
+Hello from Nomad!
+I'm gbt55
+EOF
       }
     }
   }
