@@ -57,7 +57,7 @@ job "hello-world" {
       }
 
       env {
-        MESSAGE = "Hello from Nomad.\\nI'm gbt55"
+        MESSAGE = "Hello from Nomad!\nI'm gbt55"
       }
     }
   }
