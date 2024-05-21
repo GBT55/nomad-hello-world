@@ -57,10 +57,10 @@ job "hello-world" {
       }
 
       env {
-        MESSAGE = "
+        MESSAGE = <<EOF
         Hello from Nomad!
         I'm gbt55
-        "
+        EOF
       }
     }
   }
