@@ -8,10 +8,11 @@ job "hello-world" {
   }
 
   group "app" {
-    count = 3
+    count = 1
 
     network {
       port "http" {
+        static = 8008
         to = 8008
       }
     }
