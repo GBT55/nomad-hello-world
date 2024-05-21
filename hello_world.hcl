@@ -8,7 +8,7 @@ job "hello-world" {
   }
 
   group "app" {
-    count = 1
+    count = 2
 
     network {
       port "http" {
