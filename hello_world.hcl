@@ -1,6 +1,6 @@
 job "hello-world" {
   datacenters = ["lan"]
-  type = "service"
+  type        = "service"
 
   group "app" {
     count = 2
@@ -8,7 +8,7 @@ job "hello-world" {
     network {
       port "http" {
         static = 8008
-        to = 8008
+        to     = 8008
       }
     }
 
@@ -38,12 +38,12 @@ job "hello-world" {
     restart {
       attempts = 2
       interval = "30m"
-      delay = "15s"
-      mode = "fail"
+      delay    = "15s"
+      mode     = "fail"
     }
 
     task "server" {
-      driver = "docker"
+      driver         = "docker"
       shutdown_delay = "2s"
 
       config {
